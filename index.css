@@ -1,0 +1,87 @@
+:root {
+  --background: #000000;
+  --accent: #4a8380;
+  --button-background: #000000;
+  --text: #4a8380;
+  --button-text: #ffffff;
+}
+@font-face { font-family: "LSSr"; src: url("./fonts/LINESeedSans_A_Rg.ttf") format("truetype"); }
+@font-face { font-family: "LSSxbd"; src: url("./fonts/LINESeedSans_A_XBd.ttf") format("truetype"); }
+@font-face { font-family: "Baloo2"; src: url("./fonts/Baloo2-SemiBold.ttf") format("truetype"); }
+@font-face { font-family: "PSb"; src: url("./fonts/ProductSans-Bold.ttf") format("truetype"); }
+@font-face { font-family: "PSr"; src: url("./fonts/ProductSans-Regular.ttf") format("truetype"); }
+
+[role="checkbox"] { border: 1px solid; display: inline-block; height: 25px; width: 25px; }
+* { font-family: "PSr"; align-items: center;} 
+.emoji { width: 16px; border: none; }
+.logo { margin-top: 5px; }
+.outline-box { border-radius: 24px; border: 3px solid var(--accent); max-width: 400px;  margin-bottom: 5px; }
+details summary::-webkit-details-marker { display:none; }
+body { background-color: var(--background); color: var(--text); font-family: Arial; }
+
+.button {
+  background-color: var(--accent);
+  border: none;
+  color: var(--button-background);
+  padding: 8px 16px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  border-radius: 16px;
+  background-color: var(--button-background);
+  color: var(--button-text); 
+  border: 3px solid var(--accent);
+  text-decoration: none;
+}
+
+.button:hover {
+  background-color: var(--accent);
+  color: var(--button-background);
+  box-shadow: 0 16px 32px 0 rgba(0,0,0,0.24), 0 10px 50px 0 rgba(0,0,0,0.19);
+}
+
+summary {
+  border: 4px solid transparent;
+  outline: none;
+  &:focus {
+    border-color: none;
+  }
+  padding: 0.75rem;
+  display: block;
+  background: var();
+  color: var(--text);
+  align: center;
+  position: relative;
+  cursor: pointer;
+  border-radius: 24px;
+  outline: none;
+}
+
+details {
+  max-width: 400px;
+  box-sizing: border-box;
+  margin-top: 5px;
+  background: var(--button-background);
+  border-radius: 24px;
+  border: 3px solid var(--accent);
+  outline: none;
+}
+
+.content {
+  border-top: none;
+  padding: 10px;
+  border-top: none;
+  border-radius: 12px;
+  outline: none;
+}
+p {
+  margin: 0;
+  padding-bottom: 10px;
+  &:last-child {
+    padding: 0;
+  }
+}
